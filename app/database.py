@@ -8,7 +8,7 @@ load_dotenv()
 
 DATABASE_URL = os.getenv(
     "DATABASE_URL",
-    "mysql://root:NIGKOeMiuzkeWIkLYbaEjcuHaIbGVlfb@shuttle.proxy.rlwy.net:28397/railway"
+    "mysql+pymysql://root:NIGKOeMiuzkeWIkLYbaEjcuHaIbGVlfb@shuttle.proxy.rlwy.net:28397/railway"
 )
 
 engine = create_engine(
